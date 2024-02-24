@@ -60,6 +60,7 @@ function AtualizarInterface () {
         seuVotoPara.style.display = 'block'
         aviso.style.display = 'block'
         description.innerHTML = `   Nome: ${candidato.nome} <br>
+        ${candidato.vice} <br>
         Partido: ${candidato.partido} <br>`
 
 
@@ -68,7 +69,7 @@ function AtualizarInterface () {
         for(let i = 0 ; i < candidato.fotos.length; i++){
 
             fotoHTML += `<div class="d-1-image">
-            <img src="images/${candidato.fotos[i].url}" alt="prefeito" class="d-1-image">
+            <img src="images/${candidato.fotos[i].url}" alt="" class="d-1-image">
             ${candidato.fotos[i].legenda}
          </div>`
 

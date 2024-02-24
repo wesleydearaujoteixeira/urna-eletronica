@@ -19,13 +19,12 @@
                         <span> VEREADOR </span>
                     </div>
                     <div class="d-1-3">
-                        <input type="text" name="" id="" class="numero pisca">
-                        <input type="text" name="" id="" class="numero">
+                        <div class="numero"> </div>
                     </div>
                     <div class="d-1-4">
                         Nome: Luiz Inácio Lula da Silva <br>
                         Partido: Partido dos Trabalhadores <br>
-                        Vice-Prefeito: <br> Jair Messias Bolsonaro
+                        Vice-Prefeito: <br> Jair Meossias Bolsnaro
                     </div>
                 </div>
                 <div class="d-1-right">
@@ -39,35 +38,36 @@
                      </div> 
                 </div>
             </div>
-            <div class="d2">
+            <div class="d-2">
                 Aperte a Tela:<br>
                 CONFIRMA para confirmar este voto?<br>
                 CORRIGE para reiniciar este voto
             </div>
         </div>
         <div class="teclado">
+
             <div class="teclado--linha">
-                <div class="teclado-buttons"> 1 </div>
-                <div class="teclado-buttons"> 2 </div>
-                <div class="teclado-buttons"> 3 </div>
+                <div class="teclado-buttons" onclick="clicou('1')"> 1 </div>
+                <div class="teclado-buttons" onclick="clicou('2')"> 2 </div>
+                <div class="teclado-buttons"onclick="clicou('3')"> 3 </div>
             </div>
             <div class="teclado--linha">
-                <div class="teclado-buttons"> 4 </div>
-                <div class="teclado-buttons"> 5 </div>
-                <div class="teclado-buttons"> 6 </div>
+                <div class="teclado-buttons"onclick="clicou('4')"> 4 </div>
+                <div class="teclado-buttons"onclick="clicou('5')"> 5 </div>
+                <div class="teclado-buttons"onclick="clicou('6')"> 6 </div>
             </div>
             <div class="teclado--linha">
-                <div class="teclado-buttons"> 7 </div>
-                <div class="teclado-buttons"> 8 </div>
-                <div class="teclado-buttons"> 9 </div>
+                <div class="teclado-buttons" onclick="clicou('7')"> 7 </div>
+                <div class="teclado-buttons"onclick="clicou('8')"> 8 </div>
+                <div class="teclado-buttons"onclick="clicou('9')"> 9 </div>
             </div>
             <div class="teclado--linha">
-                <div class="teclado-buttons"> 0 </div>
+                <div class="teclado-buttons"onclick="clicou('0')"> 0 </div>
             </div>
             <div class="teclado--linha">
-                <div class="btn-font white"> BRANCO </div>
-                <div class="btn-font correct"> CORRIGE </div>
-                <div class="btn-font confirm"> CONFIRMA </div>
+                <div class="btn-font white" onclick="white()"> BRANCO </div>
+                <div class="btn-font correct" onclick="corrige()"> CORRIGE </div>
+                <div class="btn-font confirm" onclick="ConfirmandoVoto()"> CONFIRMA </div>
             </div>
         </div>
     </div>
